@@ -1,0 +1,12 @@
+############################################
+##
+## redirect www.allisonsgourmet.com
+RewriteEngine On    # Turn on the rewriting engine
+
+RewriteRule ^vegan-cookbook.*$ https://allisonriverssamson.com/store/8WYLGGb6 [NC,L]
+RewriteRule ^index.php/recipes-writings.*$ https://www.allisonriverssamson.com/blog [NC,L]
+RewriteRule ^recipes-writings.*$ https://www.allisonriverssamson.com/blog [NC,L]
+RewriteRule ^.* http://www.allisonriverssamson.com/blog/where-s-allison-s-gourmet [NC,L]
+
+Redirect 301 / https://www.allisonriverssamson.com/blog/where-s-allison-s-gourmet
+
